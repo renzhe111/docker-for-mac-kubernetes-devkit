@@ -19,7 +19,7 @@ services:
     image: alpine/socat:1.0.2
     ports:
       - 1194:1194
-    command: TCP-LISTEN:1194,fork TCP:172.32.0.1:31194
+    command: TCP-LISTEN:1194,fork TCP:172.19.0.1:31194
     restart: always
     depends_on:
       - openvpn
